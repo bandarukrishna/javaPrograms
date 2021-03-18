@@ -5,7 +5,7 @@ import java.util.Stack;
 public class balancedArray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub/////
+		// TODO Auto-generated method stub
 String s="{{{[[[]]]}}}[";
 Stack<Character> st=new Stack<Character>();
 for(int i=0;i<s.length();i++) {
