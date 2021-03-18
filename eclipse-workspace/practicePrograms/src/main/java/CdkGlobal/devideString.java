@@ -15,7 +15,7 @@ public class devideString {
                     "is not divisible by n");
 			return;
 		}
-		for(int i=0;i<s.length()-1;i=i+l) {
+		for(int i=0;i<s.length();i=i+l) {
 	
 			s1[temp]= s.substring(i, i+l);
 			temp++;
