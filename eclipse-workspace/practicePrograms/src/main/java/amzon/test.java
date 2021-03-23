@@ -6,4 +6,6 @@ public class test {
 		// TODO Auto-generated method stub
 int [] a= {1,2,3,7,6,4,3,4,6};
 
+System.out.println("modified locally");
+
 }}
