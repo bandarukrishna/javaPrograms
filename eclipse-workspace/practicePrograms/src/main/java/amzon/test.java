@@ -4,6 +4,8 @@ public class test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		String s="modified from remote repository";
 
 	}
 
