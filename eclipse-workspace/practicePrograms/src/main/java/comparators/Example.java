@@ -38,6 +38,7 @@ public class Example {
       System.out.println("After Sorting the student data by Name:"); 
       studentlist.sort((Student s1, Student s2)->s2.getName().compareTo(s1.getName()));
     //Lambda expression for sorting the list by student age in reverse order 
+
       studentlist.forEach((s)->System.out.println(s));
       System.out.println("After Sorting the student data by Age:");
       studentlist.sort((Student s1, Student s2)->s2.getAge()-s1.getAge());

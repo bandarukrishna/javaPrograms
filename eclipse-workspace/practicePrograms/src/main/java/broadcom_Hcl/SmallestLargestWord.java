@@ -3,7 +3,12 @@ package broadcom_Hcl;
 import java.util.Stack;
 
 public class SmallestLargestWord {
-
+/* input
+ "Hardships often prepare ordinary people for an is extraordinary destiny"
+ * output
+smallest words:[an, is]
+Largest words: extraordinary
+ * */
     public static void main(String[] args) {
         String string = "Hardships often prepare ordinary people for an is extraordinary destiny";
         String word = "", small = "", large = "";
@@ -55,9 +60,9 @@ public class SmallestLargestWord {
 
         }
 
-        System.out.println(stksmall);
+        System.out.println("smallest words:" +stksmall);
 
         // System.out.println("Smallest word: " + small);    
-        System.out.println("Largest word: " + large);
+        System.out.println("Largest words: " + large);
     }
 }
