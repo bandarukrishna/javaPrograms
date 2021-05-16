@@ -1,7 +1,5 @@
 package interviewQues;
 
-import java.util.stream.IntStream;
-
 public class nonRepeatableChar {
 
 	public static void main(String[] args) {
@@ -9,16 +7,17 @@ public class nonRepeatableChar {
 		method();
 	}
 static void method() {
-	String str = "zzzzzbbbccccddehhhhiii";
+	String str = "zzzzzbbbckcccddehhhhiii";
 	int[] countingArray = new int[128];
 	str.chars().forEach(value -> countingArray[value]++);
 	int nonRepeatingCharAsInt = 0;
 	for (int i = 0; i < countingArray.length; i++) {
 	    if (countingArray[i] == 1) {
-	        nonRepeatingCharAsInt = i;
-	        break;
+	      //  nonRepeatingCharAsInt = i;
+	        System.out.println("character = " + Character.valueOf((char) i));
+	       // break;
 	    }
 	}
-	System.out.println("character = " + Character.valueOf((char) nonRepeatingCharAsInt));
+	//System.out.println("character = " + Character.valueOf((char) nonRepeatingCharAsInt));
 }
 }

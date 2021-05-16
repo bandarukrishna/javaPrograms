@@ -1,7 +1,6 @@
 package practicePrograms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -14,7 +13,7 @@ public class duplicateElemAsList {
 		List<Integer> lst=new ArrayList<Integer>();
 		for(int i=0;i<l;i++) {
 			for(int j=i+1;j<l;j++) {
-				if(a[i]==a[j] && Collections.frequency(lst, a[i])<1) {
+				if(a[i]==a[j] && Collections.frequency(lst, a[i])==0) {
 					
 					lst.add(a[i]);
 				}

@@ -3,4 +3,14 @@
   <groupId>practice</groupId>
   <artifactId>practice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+
+<dependencies>
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.4</version>
+</dependency>
+</dependencies>
+  
 </project>

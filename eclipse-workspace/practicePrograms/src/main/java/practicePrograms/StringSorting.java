@@ -5,6 +5,12 @@ public class StringSorting {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 String a[]= {"krish","vijji","chanti","java","selenium"},temp;
+//output
+/*chanti
+java
+krish
+selenium
+vijji*/
 
 for(int i=0;i<a.length;i++) {
 	for(int j=i+1;j<a.length;j++) {

@@ -19,4 +19,14 @@ static void rotateArray(int a[]){
 	}
 	a[a.length-1]=temp;
 }
+//generic code for all data types data should in object array like Integer,Character
+public static <T> void rotate(T[] a) {
+	
+	Object var=a[0];
+	for(int i=0;i<a.length-1;i++) {
+		a[i]=a[i+1];
+	}
+	
+	a[a.length-1]=(T) var;
+}
 }

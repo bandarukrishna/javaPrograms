@@ -4,7 +4,7 @@ public class balancedIndex {
 	static int lftsum=0,rgtSum=0;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a[]={2};
+		int a[]={2,3,4,0,1,5,3};
 		indexsum(a);
 	}
 
@@ -24,7 +24,7 @@ public class balancedIndex {
 		}
 
 		if(lftsum==rgtSum){
-		System.out.println("index: "+i+ "lftsum :" +lftsum+ "rgtSum :" +rgtSum);
+		System.out.println("index: "+i+ " lftsum :" +lftsum+ " rgtSum:" +rgtSum);
 
 		}
 		lftsum=0;

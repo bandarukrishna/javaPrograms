@@ -1,24 +1,23 @@
 package practicePrograms;
 public class sumOfNumInString {
 
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-        /*Input:- aa123bb4
-        Output:- 127
-        Input:- bbb5cc5dd12
-        Output:- 22*/
-        String s = "aa123bb4";
-        int sum = 0;
-        String k[] = s.split(("[a-zA-Z]"));
-        for (int j = 0; j < k.length; j++) {
+	public static void main(String[] args) {
+		String s="adc10c11d12";
+		//input adc10c11d12, output 33
+		String temp="0";
+		int sum=0;
+		for(int i=0;i<s.length();i++) {
+			char ch=s.charAt(i);
+			if(Character.isDigit(ch)) {
+				temp=temp+ch;
+			}
+			else {
+				sum=sum+Integer.parseInt(temp);
+				temp="0";
+			}
 
-            if (k[j].length() != 0) {
-
-                int i = Integer.parseInt(k[j]);
-                sum = sum + i;
-            }
-        }
-        System.out.println(sum);
-    }
-
+		}
+		sum=sum+Integer.parseInt(temp);
+		System.out.println(sum);
+	}
 }
